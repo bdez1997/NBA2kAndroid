@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spnName"
+        android:layout_width="318dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:entries="@array/jugadoresNBA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgJugador"
+        android:layout_width="204dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnName"
+        app:srcCompat="@drawable/michaeljordan" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgJugador" />
+
+    <TextView
+        android:id="@+id/txtNacionalidad"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/nacionalidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <TextView
+        android:id="@+id/txtEquipo"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Equipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNacionalidad" />
+
+    <TextView
+        android:id="@+id/txtPosicion"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Posicion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/imgJugador" />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/txtNacionalidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtPosicion" />
+
+    <TextView
+        android:id="@+id/txtAltura"
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <TextView
+        android:id="@+id/txtNombreRes"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPosicion"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintTop_toBottomOf="@+id/imgJugador" />
+
+    <TextView
+        android:id="@+id/txtNacionalidadRes"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtPeso"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@+id/txtNacionalidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRes" />
+
+    <TextView
+        android:id="@+id/txtEquipoRes"
+        android:layout_width="89dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAltura"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toEndOf="@+id/txtEquipo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNacionalidadRes" />
+
+    <TextView
+        android:id="@+id/txtAlturaRes"
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtAltura"
+        app:layout_constraintTop_toBottomOf="@+id/txtPesoRes" />
+
+    <TextView
+        android:id="@+id/txtPesoRes"
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/txtPeso"
+        app:layout_constraintTop_toBottomOf="@+id/txtPosicionRes" />
+
+    <TextView
+        android:id="@+id/txtPosicionRes"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toEndOf="@+id/txtPosicion"
+        app:layout_constraintTop_toBottomOf="@+id/imgJugador" />
+</androidx.constraintlayout.widget.ConstraintLayout>

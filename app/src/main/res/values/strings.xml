@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NBA2K</string>
+    <string-array name="jugadoresNBA">
+        <item name="empty">Seleccione una estrella de la NBA</item>
+        <item name="MichaelJordan">Michael Jordan</item>
+        <item name="KobeBryant">Kobe Bryant</item>
+        <item name="PauGasol">Pau Gasol</item>
+    </string-array>
+    <string name="nombre">Nombre:</string>
+    <string name="nacionalidad">Nacionalidad:</string>
+    <string name="Equipo">Equipo:</string>
+    <string name="Posicion">Posición:</string>
+    <string name="Peso">Peso:</string>
+    <string name="Altura">Altura:</string>
+</resources>
